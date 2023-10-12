@@ -1,0 +1,126 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the container */
+.container {
+   
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the form */
+.searchData {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input#inputbox {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the details section */
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    flex-basis: calc(33.33% - 10px);
+    text-align: center;
+}
+
+/* Style specific cards */
+#logoImage {
+    max-width: 100%;
+}
+
+
+/* ... Previous CSS code ... */
+
+/* Media query for screens smaller than 600px (typical mobile screens) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .searchData {
+        margin-bottom: 10px;
+    }
+
+    input#inputbox {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .details {
+        display: block; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin: 5px 0; /* Add vertical spacing between cards */
+    }
+    
+    /* Ensure the logo image stays within the container width */
+    #logoImage {
+        max-width: 100%;
+    }
+}
